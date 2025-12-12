@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 6 | Calculatrice & Introduction PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini-Application Web : Calculatrice Locale</h1>
+        <p>Un exercice combinant HTML, CSS et JavaScript.</p>
+        <nav>
+            <a href="info.php" target="_blank">Voir la page PHP</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-card">
+            <h2>Effectuer une Opération</h2>
+            
+            <form id="calc-form">
+                <div class="form-group">
+                    <label for="nombre-a">Nombre A</label>
+                    <input type="number" id="nombre-a" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="operation">Opération</label>
+                    <select id="operation" required>
+                        <option value="plus">+</option>
+                        <option value="minus">−</option>
+                        <option value="times">×</option>
+                        <option value="divide">÷</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre-b">Nombre B</label>
+                    <input type="number" id="nombre-b" required>
+                </div>
+                
+                <button type="submit" id="calculer-btn">Calculer</button>
+            </form>
+
+            <div id="error-message" class="error-zone"></div>
+        </section>
+
+        <section class="history-card">
+            <h2>Historique des Opérations</h2>
+            <ul id="history-list" class="history-list">
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TP 6 - Développement Web Avancé</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
